@@ -1,0 +1,70 @@
+{
+    "version": "1.6.0",
+    "description": "A tool to disable Windows Defender through the Windows Security Center API",
+    "homepage": "https://github.com/es3n1n/defendnot",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/es3n1n/defendnot/releases/download/v1.6.0/x64.zip",
+                "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+            ],
+            "hash": [
+                "7f1e804c7e147c9d4b569c9545a725995a46727744eacd37d9437c8d6e71500e",
+                "e8e109f2d6eba2889e57d0e23c40c55f6f3d8ca8847b26226ad431b1f5ee001f"
+            ]
+        },
+        "32bit": {
+            "url": [
+                "https://github.com/es3n1n/defendnot/releases/download/v1.6.0/x86.zip",
+                "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+            ],
+            "hash": [
+                "f4aeb784f5232c5f16c64e0a6ea4cf60bb7e038eac246f68702b91202f6eb6ca",
+                "e8e109f2d6eba2889e57d0e23c40c55f6f3d8ca8847b26226ad431b1f5ee001f"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://github.com/es3n1n/defendnot/releases/download/v1.6.0/ARM64.zip",
+                "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+            ],
+            "hash": [
+                "54f980a283a86e5d0c28143904ac8885c3fa84ab288e91971bc65c277bb6ea6a",
+                "e8e109f2d6eba2889e57d0e23c40c55f6f3d8ca8847b26226ad431b1f5ee001f"
+            ]
+        }
+    },
+    "bin": [
+        "defendnot-loader.exe",
+        [
+            "install-defendnot.ps1",
+            "install-defendnot"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/es3n1n/defendnot"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://github.com/es3n1n/defendnot/releases/download/v$version/x64.zip",
+                    "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+                ]
+            },
+            "32bit": {
+                "url": [
+                    "https://github.com/es3n1n/defendnot/releases/download/v$version/x86.zip",
+                    "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+                ]
+            },
+            "arm64": {
+                "url": [
+                    "https://github.com/es3n1n/defendnot/releases/download/v$version/ARM64.zip",
+                    "https://raw.githubusercontent.com/xyz1001/scoop-bucket/d35fa07e9922a59a67a147029c4b192bba4f67e3/bin/install-defendnot.ps1#/install-defendnot.ps1"
+                ]
+            }
+        }
+    }
+}
